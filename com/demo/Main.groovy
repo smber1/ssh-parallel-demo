@@ -1,13 +1,13 @@
 
 package com.demo
 
-import com.demo.SimpleOperation
+import com.demo.DoubleOperation
 import com.demo.ParallelMapper
 
 class Main {
   static void main(String... args) {
-    List operations = [new SimpleOperation()]
+    def operations = [new DoubleOperation(1), new DoubleOperation(2), new DoubleOperation(3)]
     ParallelMapper parallelMapper = new ParallelMapper(operations)
-    parallelMapper.map();
+    println parallelMapper.map();
   }
 }

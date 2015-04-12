@@ -4,11 +4,6 @@
 * Java 1.8.0_25
 * Groovy 2.3.7
 
-## Build
+## Build and run
 
-    $ ./build.sh
-
-
-## Run
-
-    $ ./run.sh
+    $ ./build.sh && ./run.sh

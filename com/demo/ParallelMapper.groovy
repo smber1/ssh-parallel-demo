@@ -9,7 +9,9 @@ class ParallelMapper {
   List<Operation> operations
 
   def map() {
-    operations.each { it.perform() }
+    groovyx.gpars.GParsPool.withPool {
+      operations.parallel.map { it.perform() }.collection
+    }
   }
 }
 
