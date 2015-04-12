@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-groovyc -d out demo.groovy
+groovyc -d out -cp lib com/demo/Main.groovy

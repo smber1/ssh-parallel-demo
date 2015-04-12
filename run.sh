@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-groovy -cp out Demo
+groovy -cp lib:out com/demo/Main
